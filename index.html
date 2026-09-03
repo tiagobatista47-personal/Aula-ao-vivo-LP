@@ -45,7 +45,19 @@
     .checklist li{position:relative;padding:16px 18px 16px 48px;border:1px solid rgba(255,255,255,.07);border-radius:14px;background:rgba(255,255,255,.025)}
     .checklist li:before{content:"✓";position:absolute;left:18px;top:15px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:rgba(211,168,75,.14);color:var(--gold2);font-weight:800}
     .about{max-width:900px;margin:auto;display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:center}
-    .photo{aspect-ratio:1;border-radius:22px;border:1px solid var(--line);background:radial-gradient(circle at 40% 25%,rgba(211,168,75,.22),transparent 35%),#11161d;display:grid;place-items:center;text-align:center;color:#8f96a3;padding:20px}
+   .photo{
+  aspect-ratio: 1;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
     .about h3{margin:0 0 10px;font-size:1.7rem}
     .about p{margin:0;color:var(--muted)}
     .final{text-align:center;padding-bottom:80px}
@@ -118,10 +130,11 @@
       <div class="wrap">
         <div class="about">
           <div class="photo">
-           <img
+  <img
     src="https://res.cloudinary.com/uz9xifvr/image/upload/f_auto,q_auto/Foto_Profissional_camisa_preta_ykmyub"
     alt="Tiago Batista"
-          <div>
+  >
+</div>
             <h3>Tiago Batista — Personal Trainer</h3>
             <p>Trabalho com mulheres que querem construir um corpo mais forte, saudável e funcional sem depender de motivação constante, treinos exaustivos ou rotinas incompatíveis com a vida real. Foi dessa experiência que nasceu o <strong style="color:#f0cc72">Código da Consistência</strong>.</p>
           </div>
